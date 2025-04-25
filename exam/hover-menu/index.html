@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Level Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            list-style: none;
+            padding: 0;
+            background: tomato;
+            display: flex;
+        }
+        .menu li {
+            position: relative;
+        }
+        .menu > li {
+            padding: 15px 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .menu > li:hover {
+            background: rgb(243, 53, 19);
+        }
+        .submenu, .sub-submenu {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background: green;
+            list-style: none;
+            padding: 0;
+            width: 180px;
+        }
+        .submenu li, .sub-submenu li {
+            padding: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        .submenu li:hover, .sub-submenu li:hover {
+            background: gold;
+        }
+        .submenu li {
+            position: relative;
+        }
+        .sub-submenu {
+            left: 100%;
+            top: 0;
+        }
+        .menu li:hover > .submenu,
+        .submenu li:hover > .sub-submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li>Home</li>
+        <li>Service
+            <ul class="submenu">
+                <li>Web Design
+                    <ul class="sub-submenu">
+                        <li>WordPress</li>
+                        <li>MERN</li>
+                        <li>Laravel</li>
+                    </ul>
+                </li>
+                <li>SEO</li>
+                <li>SMM</li>
+                <li>Digital Marketing
+                    <ul class="sub-submenu">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Portfolio</li>
+        <li>Blog
+            <ul class="submenu">
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+            </ul>
+        </li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>

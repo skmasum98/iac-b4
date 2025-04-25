@@ -1,0 +1,619 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.logo img {
+    max-height: 50px; /* Ensures the logo is of a reasonable size */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes the nav links align in a row */
+}
+
+.nav li {
+    margin: 0 15px; /* Adds space between each nav item */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333; /* Dark color for the nav links */
+    font-weight: bold;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+}
+
+.auth-buttons button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .sign-in {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+}
+
+.auth-buttons .login {
+    background-color: #28a745; /* Bootstrap success color */
+    color: white;
+}
+
+.auth-buttons button:hover {
+    opacity: 0.9; /* Adds a hover effect */
+}
+
+/* Hero section styling */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Set to relative for absolutely positioned elements */
+    background-image: 
+        url('img/hero/bg-left-top.png'), 
+        url('img/hero/bd-top-middle.png'), 
+        url('img/hero/bg-left-bottom.png'), 
+        url('img/hero/bd-top-middle.png'), 
+        url('img/hero/bg-right-bottom.png');
+    background-position: 
+        top left, 
+        top center, 
+        bottom left, 
+        bottom center, 
+        bottom right;
+    background-size: 80px 120px; /* Adjust based on your image size */
+    background-repeat: no-repeat; /* Prevent repeating of background images */
+    padding: 20px; /* Add some padding */
+}
+
+/* Add a pseudo-element for the top right background image */
+.hero::before {
+    content: url('img/hero/bg-right-middle.png'); 
+    position: absolute; /* Position relative to the .hero */
+    right: 0; /* Align to the right edge */
+    top: 20%; /* Position from the top */
+    width: 80px; /* Width of the image */
+    height: 120px; /* Height of the image */
+    z-index: 1; /* Ensure it stays above other background images */
+}
+
+/* Content styling */
+.content {
+    max-width: 500px; /* Limit width of text block */
+    color: rgb(0, 0, 0); /* Text color for contrast against background */
+}
+
+.content h1 {
+    font-size: 2.5em; /* Size of heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.content p {
+    margin-bottom: 15px; /* Space between paragraphs */
+    font-size: 1.2em; /* Font size of paragraph */
+}
+
+button {
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1em; /* Font size for button */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    cursor: pointer; /* Cursor changes to pointer */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Hero image styling */
+.hero-image {
+    flex-shrink: 0; /* Prevent the hero image from shrinking */
+}
+
+.hero-image img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/* Next Section Styling */
+.next-section {
+    display: flex; /* Flexbox for two-part layout */
+    align-items: center; /* Align items at the top */
+    justify-content: space-between; /* Space between elements */
+    padding: 40px; /* Padding around the section */
+    position: relative; /* Positioning context for absolute children */
+    background-color: #f9f9f9; /* Background color for the section */
+}
+
+/* Left Part Styling */
+.left-part {
+    flex: 1; /* Allow the left part to take available space */
+    position: relative; /* Positioning context */
+}
+
+.left-image {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    z-index: 100;
+}
+
+/* Background image for the left part */
+.left-part::after {
+    content: ''; 
+    position: absolute; 
+    background-image: url('img/section-2/left-bg.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: 150px; 
+    height: 150px; 
+    bottom: 150px; 
+    right: 100px; 
+    z-index: 5; 
+}
+
+/* Right Part Styling */
+.right-part {
+    flex: 2; /* Allow the right part to take more space */
+    max-width: 600px; /* Optional max width */
+    display: flex; /* Enable flex on the right part */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+.right-part h2 {
+    font-size: 1.8em; /* Heading size */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.right-part p {
+    margin-bottom: 20px; /* Space below paragraph */
+    font-size: 1.1em; /* Font size for paragraph */
+    line-height: 1.6; /* Improve readability */
+}
+
+button {
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1em; /* Font size for button */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.next-section::after {
+    content: ''; /* Necessary for a pseudo-element */
+    position: absolute; /* Position it absolutely */
+    background-image: url('img/section-2/Group.png'); /* Background image */
+    background-size: contain; /* Scale the image to fit the area */
+    background-repeat: no-repeat; /* No repeat */
+    width: 150px; /* Adjust width */
+    height: 150px; /* Adjust height */
+    right: 20px; /* Position it 20px from the right */
+    bottom: 20px; /* Position it 20px from the bottom */
+    z-index: 0; /* Ensure it sits behind other content */
+}
+
+/* About section */
+/* About Section Styling */
+.about-section {
+    display: flex; /* Flexbox for two-part layout */
+    align-items: center;
+    position: relative; /* Relative positioning for the section */
+    padding: 40px; /* Padding around the section */
+    background-color: #f5f5f5; /* Background color for the section */
+}
+
+/* Background Icons */
+.background-icons {
+    position: absolute; /* Positioning for absolute items */
+    top: 0; /* Aligns to the top of the section */
+    left: 0; /* Aligns to the left side */
+    width: 100%; /* Make full width */
+    height: 100%; /* Make full height */
+}
+
+.top-left-icon {
+    position: absolute;
+    background-image: url('img/about/bg.png'); /* Background image for top-left icon */
+    width: 100px; /* Adjust size based on your icon */
+    height: 80px; /* Adjust size based on your icon */
+    top: 20px; /* Adjust position */
+    left: 0; /* Adjust position */
+    background-size: contain; /* Ensure the icon fits */
+    background-repeat: no-repeat; /* No repeat */
+    z-index: 1; /* Ensure it sits above background */
+}
+
+.bottom-right-icon {
+    position: absolute;
+    background-image: url('img/about/bg.png'); /* Background image for bottom-right icon */
+    width: 150px; /* Adjust size based on your icon */
+    height: 80px; /* Adjust size based on your icon */
+    bottom: -50px; /* Adjust position */
+    right: 0; /* Adjust position */
+    background-size: contain; /* Ensure the icon fits */
+    background-repeat: no-repeat; /* No repeat */
+    z-index: 1; /* Ensure it sits above background */
+}
+
+/* Boxes Container */
+.boxes-container {
+    display: flex; /* Flexbox for boxes layout */
+    justify-content: space-between; /* Space between boxes */
+    margin-top: 100px; /* Space from the top */
+}
+
+/* Individual Box Styling */
+.box {
+    flex: 1; /* Each box should take the same amount of space */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside boxes */
+    margin: 10px; /* Margin around boxes */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text alignment */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for depth on hover */
+}
+
+.box-icon {
+    width: 80px; /* Width of box icons */
+    height: 80px; /* Height of box icons */
+    background-size: contain; /* Logo fits within the div */
+    background-repeat: no-repeat; /* No repeat */
+    margin: 0 auto 15px; /* Center box and margin below */
+}
+
+.box h3 {
+    font-size: 1.5em; /* Headline size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.box p {
+    font-size: 1em; /* Paragraph size */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Features Section */
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 40px;
+    background-image: url('img/Featured/bgleft.png'), url('img/Featured/bg-right-bottom.png'); /* Replace with your image paths */
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100px 200px;
+    color: #333;
+    
+}
+
+.featured-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.featured-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.featured-courses {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.course-box {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.2s;
+}
+
+.course-box:hover {
+    transform: scale(1.05);
+}
+
+.course-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Learning Section */
+.learning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* A light background color for distinction */
+}
+
+.learning-top-image {
+    width: 100px; /* Adjust the width as necessary */
+    height: auto;
+    margin-bottom: -50px;
+}
+
+.learning-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.learning-left {
+    flex: 1;
+    margin-right: 20px; /* Space between the two columns */
+    margin-top: 20%;
+}
+
+.learning-left h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.learning-left p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.start-free-trial {
+    padding: 10px 20px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learning-right {
+    flex: 1;
+}
+
+.learning-right-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the right image */
+}
+
+.learning-bottom-images {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: -50px;
+}
+
+.bottom-image {
+    width: 150px; /* Each image takes up nearly half the width */
+    height: auto;
+}
+
+.left-bottom {
+    order: 1; /* Left image */
+}
+
+.right-bottom {
+    order: 2; /* Right image */
+    margin-top: -70px;
+    margin-right: -35px;
+
+}
+
+
+/* ///////////////////Newsletter////////////// */
+
+.newsletter-section {
+    
+    margin: 0 20px; /* Left and right margin */
+    padding: 40px; /* Padding for the section */
+    position: relative;
+}
+
+.newsletter-content {
+    background-image: url('img/newsletter/bg.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* Space for the bottom image */
+}
+
+.newsletter-left {
+    flex: 1; /* Take remaining space */
+    max-width: 600px; /* Limit width as necessary */
+    padding-left: 20px;
+}
+
+.newsletter-description {
+    font-size: 18px;
+    color: #8785aa; /* Color for the description */
+}
+
+.newsletter-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #1a1a1a; /* Title color */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.newsletter-form {
+    display: flex;
+}
+
+.email-input {
+    width: 70%; /* Width of input field */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between input and button */
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    background-color: #009688; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #00796b; /* Darker shade on hover */
+}
+
+.newsletter-right {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+}
+
+.right-image {
+    width: 100%; /* Responsive image */
+    height: auto;
+    max-width: 400px; /* Limit the max width of the right image */
+}
+
+.bottom-right-image {
+    position: absolute;
+    bottom: -80px; /* Position from the bottom */
+    right: 20px; /* Position from the right */
+    width: 300px; /* Adjust size as necessary */
+    height: auto;
+}
+
+/* /////////////////Footer////////////////// */
+.footer {
+    background-color: #f8f9fa; /* Footer background color */
+    padding: 40px 20px; /* Vertical and horizontal padding */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.footer-column {
+    flex: 0 1 20%; /* Each of the first three columns take 25% of space */
+    padding: 20px;
+}
+
+.footer-column-large {
+    flex: 0 1 40%; /* The last column takes 50% of the width */
+}
+
+.footer-column h4 {
+    font-size: 1.2rem; /* Heading size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.footer-column ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+}
+
+.footer-column li {
+    margin: 5px 0; /* Space between list items */
+}
+
+.footer-column a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Link color */
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space below social media icons */
+}
+
+.social-media a {
+    margin-right: 15px; /* Space between icons */
+    margin-left: 20px;
+}
+
+.map {
+    margin-top: 20px; /* Space above the map */
+}
+
+.map img {
+    width: 100%; /* Responsive map image */
+    max-width: 300px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack the items in smaller screens */
+        text-align: center;
+    }
+
+    .nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+    }
+
+    .nav li {
+        margin: 10px 0; /* Spacing for stacked navigation */
+    }
+
+    .auth-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}

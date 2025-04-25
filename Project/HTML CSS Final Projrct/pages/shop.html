@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo"><img src="../assets/image/logo.png" alt=""></div>
+            </div>
+            <div class="nav-middle">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="pages/user.html" class="nav-icon"><i class="fa fa-user"></i></a>
+                <a href="pages/search.html" class="nav-icon"><i class="fa fa-search"></i></a>
+                <a href="pages/favorites.html" class="nav-icon"><i class="fa fa-heart"></i></a>
+                <a href="pages/cart.html" class="nav-icon"><i class="fa fa-shopping-cart"></i></a>
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shop Banner Section -->
+     <!-- Shop Top Banner -->
+<section class="shop-banner">
+    <div class="shop-banner-overlay">
+        <img src="/assets/image/icon/logo-icon.png" alt="Icon">
+        <h1>Shop</h1>
+        <p><a href="index.html">Home</a> > Shop</p>
+    </div>
+</section>
+
+<!-- Filter Bar -->
+<section class="filter-bar">
+    <div class="filter-left">
+        <button class="filter-btn view-toggle" >
+            <img src="../assets/image/icon/filtering.png" alt="Filter">&nbsp; Filter
+        </button>
+        <button class="view-toggle"><img src="../assets/image/icon/grid-round.png" alt="Grid"></button>
+        <button class="view-toggle"><img src="../assets/image/icon/view-list.png" alt="View List"></button>
+        <span class="results-text">Showing 1–16 of 32 results</span>
+    </div>
+    <div class="filter-right">
+        <label for="show-items">Show:</label>
+        <select id="show-items">
+            <option value="16">16</option>
+            <option value="32">32</option>
+        </select>
+        <label for="sort-items">Sort by:</label>
+        <select id="sort-items">
+            <option value="default">Default</option>
+            <option value="name">Name</option>
+            <option value="price">Price</option>
+            <option value="new">New</option>
+            <option value="old">Old</option>
+        </select>
+    </div>
+</section>
+
+<!-- Our Products Section -->
+<section class="products">
+    
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-Syltherine.png" alt="Product 1">
+                <span class="label discount">-20%</span>
+            </div>
+            <div class="product-info">
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
+                <p class="price"><span class="discount-price">$2500.00</span> <span class="original-price">$3500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 2-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-2.png" alt="Product 2">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+                <p class="price"><span class="discount-price">$2500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-3.png" alt="Product 2">
+                <span class="label discount">-50%</span>
+            </div>
+            <div class="product-info">
+                <h3>Lolito</h3>
+                <p>Luxury big sofa</p>
+                <p class="price"><span class="discount-price">$180</span> <span class="original-price">$220</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat for other products 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-4.png" alt="Respira">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Respira</h3>
+                <p>Outdoor bar table and stool</p>
+                <p class="price"><span class="discount-price">$500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 5-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-5.png" alt="Grifo">
+                
+            </div>
+            <div class="product-info">
+                <h3>Grifo</h3>
+                <p>Night lamp</p>
+                <p class="price"><span class="discount-price">$1500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 6-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-6.png" alt="Muggo">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Muggo</h3>
+                <p>Small mug</p>
+                <p class="price"><span class="discount-price">$150.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 7-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-7.png" alt="Pingky">
+                <span class="label discount">-50%</span>
+            </div>
+            <div class="product-info">
+                <h3>Pingky</h3>
+                <p>Cute bed set</p>
+                <p class="price"><span class="discount-price">$7000.000</span> <span class="original-price">$14000.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 8-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-8.png" alt="Potty">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Potty</h3>
+                <p>Minimalist flower pot</p>
+                <p class="price"><span class="discount-price">$5000.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-Syltherine.png" alt="Product 1">
+                <span class="label discount">-20%</span>
+            </div>
+            <div class="product-info">
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
+                <p class="price"><span class="discount-price">$2500.00</span> <span class="original-price">$3500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 2-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-2.png" alt="Product 2">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+                <p class="price"><span class="discount-price">$2500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-3.png" alt="Product 2">
+                <span class="label discount">-50%</span>
+            </div>
+            <div class="product-info">
+                <h3>Lolito</h3>
+                <p>Luxury big sofa</p>
+                <p class="price"><span class="discount-price">$180</span> <span class="original-price">$220</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat for other products 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-4.png" alt="Respira">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Respira</h3>
+                <p>Outdoor bar table and stool</p>
+                <p class="price"><span class="discount-price">$500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 5-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-5.png" alt="Grifo">
+                
+            </div>
+            <div class="product-info">
+                <h3>Grifo</h3>
+                <p>Night lamp</p>
+                <p class="price"><span class="discount-price">$1500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 6-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-6.png" alt="Muggo">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Muggo</h3>
+                <p>Small mug</p>
+                <p class="price"><span class="discount-price">$150.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 7-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-7.png" alt="Pingky">
+                <span class="label discount">-50%</span>
+            </div>
+            <div class="product-info">
+                <h3>Pingky</h3>
+                <p>Cute bed set</p>
+                <p class="price"><span class="discount-price">$7000.000</span> <span class="original-price">$14000.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 8-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="../assets/image/home/our-products-8.png" alt="Potty">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Potty</h3>
+                <p>Minimalist flower pot</p>
+                <p class="price"><span class="discount-price">$5000.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show-nore">
+        <button class="btn-show-more">1</button>
+        <button class="btn-show-more">2</button>
+        <button class="btn-show-more">3</button>
+        <button class="btn-show-more">Next</button>
+    </div>
+</section>
+
+
+<!-- Features Banner -->
+<section class="features-banner">
+    <div class="feature-box">
+        <img src="../assets/image/icon/high-quality.png" alt="High Quality">
+        <div class="feature-text">
+            <h3>High Quality</h3>
+            <p>Crafted from top materials</p>
+        </div>
+    </div>
+    <div class="feature-box">
+        <img src="../assets/image/icon/guarantee.png" alt="Warranty">
+        <div class="feature-text">
+            <h3>Warranty Protection</h3>
+            <p>Over 2 years</p>
+        </div>
+    </div>
+    <div class="feature-box">
+        <img src="../assets/image/icon/shipping.png" alt="Shipping">
+        <div class="feature-text">
+            <h3>Free Shipping</h3>
+            <p>Order over $150</p>
+        </div>
+    </div>
+    <div class="feature-box">
+        <img src="../assets/image/icon/customer-support.png" alt="Support">
+        <div class="feature-text">
+            <h3>24/7 Support</h3>
+            <p>Dedicated support</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<div class="footer-divider"></div>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Box 1: Logo & Address -->
+        <div class="footer-box logo-box">
+            <img class="footer-logo" src="../assets/image/logo.png" alt="">
+            <p>400 University Drive Suite 200 <br>Coral Gables, FL 33134 USA</p>
+        </div>
+
+        <!-- Box 2: Links -->
+        <div class="footer-box links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/shop.html">Shop</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Box 3: Help -->
+        <div class="footer-box help">
+            <h3>Help</h3>
+            <ul>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+            </ul>
+        </div>
+
+        <!-- Box 4: Newsletter -->
+        <div class="footer-box newsletter-box">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter Your Email Address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+    <p class="footer-bottom">2023 Funiro. All rights reserved</p>
+</footer>
+
+
+</body>
+</html>

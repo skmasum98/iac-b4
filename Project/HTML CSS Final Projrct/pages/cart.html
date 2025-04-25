@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo"><img src="../assets/image/logo.png" alt=""></div>
+            </div>
+            <div class="nav-middle">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="pages/user.html" class="nav-icon"><i class="fa fa-user"></i></a>
+                <a href="pages/search.html" class="nav-icon"><i class="fa fa-search"></i></a>
+                <a href="pages/favorites.html" class="nav-icon"><i class="fa fa-heart"></i></a>
+                <a href="pages/cart.html" class="nav-icon"><i class="fa fa-shopping-cart"></i></a>
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            </div>
+        </nav>
+    </header>
+
+
+     <!-- Blog Top Banner -->
+<section class="shop-banner">
+    <div class="shop-banner-overlay">
+        <img src="/assets/image/icon/logo-icon.png" alt="Icon">
+        <h1>Cart</h1>
+        <p><a href="../index.html">Home</a> > Cart</p>
+    </div>
+</section>
+
+<!-- Cart    -->
+<section>
+    <div class="cart-container">
+        <!-- Left Side - Cart Items -->
+        <div class="cart-items">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="cart-product-info">
+                            <img src="../assets/image/cart/sofa.png" alt="Asgaard sofa">
+                            <span>Asgaard Sofa</span>
+                        </td>
+                        <td>Rs. 250,000.00</td>
+                        <td><input type="number" value="1"></td>
+                        <td>Rs. 250,000.00</td>
+                        <td><i class="fa fa-trash"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Right Side - Cart Summary -->
+        <div class="cart-summary">
+            <h2>Cart Totals</h2>
+            <div class="summary-item">
+                <span>Subtotal:</span>
+                <span>Rs. 250,000.00</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total:</span>
+                <span>Rs. 250,000.00</span>
+            </div>
+            <button class="checkout-btn"><a href="checkout.html">Check Out</a></button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Features Banner -->
+<section class="features-banner">
+    <div class="feature-box">
+        <img src="../assets/image/icon/high-quality.png" alt="High Quality">
+        <div class="feature-text">
+            <h3>High Quality</h3>
+            <p>Crafted from top materials</p>
+        </div>
+    </div>
+    <div class="feature-box">
+        <img src="../assets/image/icon/guarantee.png" alt="Warranty">
+        <div class="feature-text">
+            <h3>Warranty Protection</h3>
+            <p>Over 2 years</p>
+        </div>
+    </div>
+    <div class="feature-box">
+        <img src="../assets/image/icon/shipping.png" alt="Shipping">
+        <div class="feature-text">
+            <h3>Free Shipping</h3>
+            <p>Order over $150</p>
+        </div>
+    </div>
+    <div class="feature-box">
+        <img src="../assets/image/icon/customer-support.png" alt="Support">
+        <div class="feature-text">
+            <h3>24/7 Support</h3>
+            <p>Dedicated support</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<div class="footer-divider"></div>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Box 1: Logo & Address -->
+        <div class="footer-box logo-box">
+            <img class="footer-logo" src="../assets/image/logo.png" alt="">
+            <p>400 University Drive Suite 200 <br>Coral Gables, FL 33134 USA</p>
+        </div>
+
+        <!-- Box 2: Links -->
+        <div class="footer-box links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/shop.html">Shop</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Box 3: Help -->
+        <div class="footer-box help">
+            <h3>Help</h3>
+            <ul>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+            </ul>
+        </div>
+
+        <!-- Box 4: Newsletter -->
+        <div class="footer-box newsletter-box">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter Your Email Address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+    <p class="footer-bottom">2023 Funiro. All rights reserved</p>
+</footer>
+
+
+</body>
+</html>

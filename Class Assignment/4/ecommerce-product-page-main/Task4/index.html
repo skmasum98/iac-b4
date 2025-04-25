@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <link rel="stylesheet" href="styles.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Sneaker Company">
+      </div>
+  
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle">
+        <img src="./images/icon-menu.svg" alt="Menu">
+      </button>
+  
+      <!-- Navigation -->
+      <nav class="nav" id="navMenu">
+        <ul>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Icons -->
+      <div class="icons">
+        <div class="cart-container">
+          <div class="cart" id="cartIcon">
+            <img src="./images/icon-cart.svg" alt="cart">
+          </div>
+          <div class="cart-dropdown" id="cartDropdown">
+            <h4>Cart</h4>
+            <p>Your cart is Empty</p>
+          </div>
+        </div>
+        <div class="avatar">
+          <img src="./images/image-avatar.png" alt="Avater">
+        </div>
+      </div>
+    </div>
+  </header>
+  
+
+  <section class="product">
+    <div class="product-image">
+      <img id="mainImage" src="images/image-product-1.jpg" alt="Product Image">
+      
+      <div class="thumbnails">
+        <img class="thumbnail active" src="images/image-product-1-thumbnail.jpg" data-full="images/image-product-1.jpg" alt="Thumbnail 1">
+        <img class="thumbnail" src="images/image-product-2-thumbnail.jpg" data-full="images/image-product-2.jpg" alt="Thumbnail 2">
+        <img class="thumbnail" src="images/image-product-3-thumbnail.jpg" data-full="images/image-product-3.jpg" alt="Thumbnail 3">
+        <img class="thumbnail" src="images/image-product-4-thumbnail.jpg" data-full="images/image-product-4.jpg" alt="Thumbnail 4">
+      </div>
+    </div>
+  
+    <div class="product-details">
+      <h2>Fall Limited Edition Sneakers</h2>
+      <p class="description">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+  
+      <div class="price-section">
+        <span class="current-price">$125.00</span>
+        <span class="discount">50%</span><br>
+        
+      </div>
+      <div class="main-price">
+        <span class="original-price">$250.00</span>
+      </div>
+  
+      <div class="cart-controls">
+        <div class="quantity">
+          <button class="decrease">-</button>
+          <span id="quantity-value">0</span>
+          <button class="increase">+</button>
+        </div>
+        <button class="add-to-cart">
+          <img src="images/icon-cart.svg" alt="Cart Icon"> Add to cart
+        </button>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Shaikh Abdullah Al Masum</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

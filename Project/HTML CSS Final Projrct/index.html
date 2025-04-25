@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo"><img src="assets/image/logo.png" alt=""></div>
+            </div>
+            <div class="nav-middle">
+                    
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="pages/product.html">Product</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/cart.html">Cart</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-right">
+                <a href="pages/user.html" class="nav-icon"><i class="fa fa-user"></i></a>
+                <a href="pages/search.html" class="nav-icon"><i class="fa fa-search"></i></a>
+                <a href="pages/favorites.html" class="nav-icon"><i class="fa fa-heart"></i></a>
+                <a href="pages/cart.html" class="nav-icon"><i class="fa fa-shopping-cart"></i></a>
+                <i class="fa-solid fa-bars" id="menu-toggle"></i>
+            </div>
+            
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>New Arrival</h1>
+        <h2>Discover Our New Collection</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+        <a href="pages/shop.html" class="btn">BUY NOW</a>
+    </div>
+</section>
+
+<!-- Browse The Range Section -->
+<section class="browse-range">
+    <div class="section-title">
+        <h2>Browse The Range</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="range-container">
+        <div class="range-item">
+            <img src="assets/image/home/dining.png" alt="Dining">
+            <h3>Dining</h3>
+        </div>
+        <div class="range-item">
+            <img src="assets/image/home/leiving.png" alt="Living Room">
+            <h3>Living Room</h3>
+        </div>
+        <div class="range-item">
+            <img src="assets/image/home/bedroom.png" alt="Bedroom">
+            <h3>Bedroom</h3>
+        </div>
+    </div>
+</section>
+
+
+<!-- Our Products Section -->
+<section class="products">
+    <h2 class="section-title">Our Products</h2>
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="assets/image/home/our-products-Syltherine.png" alt="Product 1">
+                <span class="label discount">-20%</span>
+            </div>
+            <div class="product-info">
+                <h3>Syltherine</h3>
+                <p>Stylish cafe chair</p>
+                <p class="price"><span class="discount-price">$2500.00</span> <span class="original-price">$3500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 2-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="assets/image/home/our-products-2.png" alt="Product 2">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Leviosa</h3>
+                <p>Stylish cafe chair</p>
+                <p class="price"><span class="discount-price">$2500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 3 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="assets/image/home/our-products-3.png" alt="Product 2">
+                <span class="label discount">-50%</span>
+            </div>
+            <div class="product-info">
+                <h3>Lolito</h3>
+                <p>Luxury big sofa</p>
+                <p class="price"><span class="discount-price">$180</span> <span class="original-price">$220</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat for other products 4 -->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="assets/image/home/our-products-4.png" alt="Respira">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Respira</h3>
+                <p>Outdoor bar table and stool</p>
+                <p class="price"><span class="discount-price">$500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 5-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="assets/image/home/our-products-5.png" alt="Grifo">
+                
+            </div>
+            <div class="product-info">
+                <h3>Grifo</h3>
+                <p>Night lamp</p>
+                <p class="price"><span class="discount-price">$1500.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 6-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="assets/image/home/our-products-6.png" alt="Muggo">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Muggo</h3>
+                <p>Small mug</p>
+                <p class="price"><span class="discount-price">$150.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 7-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="assets/image/home/our-products-7.png" alt="Pingky">
+                <span class="label discount">-50%</span>
+            </div>
+            <div class="product-info">
+                <h3>Pingky</h3>
+                <p>Cute bed set</p>
+                <p class="price"><span class="discount-price">$7000.000</span> <span class="original-price">$14000.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat for other products 8-->
+        <div class="product-card">
+            <div class="product-img">
+                <img src="assets/image/home/our-products-8.png" alt="Potty">
+                <span class="label new">New</span>
+            </div>
+            <div class="product-info">
+                <h3>Potty</h3>
+                <p>Minimalist flower pot</p>
+                <p class="price"><span class="discount-price">$5000.00</span></p>
+            </div>
+            <div class="hover-content">
+                <button class="add-to-cart">Add to Cart</button>
+                <div class="actions">
+                    <a href="#"><i class="fa fa-share">&nbsp;Share</i></a>
+                    <a href="#"><i class="fa fa-exchange">&nbsp;Compare</i></a>
+                    <a href="#"><i class="fa fa-heart"></i>&nbsp;LIKE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show-nore">
+        <button class="btn-show-more">Show More</button>
+    </div>
+</section>
+
+
+
+<!-- ////////////Slider Section //////////////////// -->
+<!-- Beautiful Rooms Inspiration Section -->
+<section class="room-inspiration">
+    <div class="text-column">
+        <h2>50+ Beautiful rooms inspiration</h2>
+        <p>Our designer already made a lot of beautiful prototype of rooms that inspire you.</p>
+        <a href="#" class="btn">Explore More</a>
+    </div>
+
+    <div class="image-column">
+        <div class="image-box">
+            <img src="assets/image/home/slider-1.png" alt="Room">
+            <div class="overlay-text">
+                <span>01 - Bed Room</span>
+                <p>Inner Peace</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-column">
+        <div class="slider">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+
+            <div class="slides">
+                <div class="slide"><img src="assets/image/home/slider-2.png" alt="Slide 1"></div>
+                <div class="slide"><img src="assets/image/home/slider-2.png" alt="Slide 2"></div>
+                <div class="slide"><img src="assets/image/home/slider-2.png" alt="Slide 3"></div>
+            </div>
+
+            <div class="slider-nav">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </div>
+
+            <div class="arrow-nav">
+                <label for="slide1" class="left-arrow"></label>
+                <label for="slide2" class="right-arrow"><i class="fa-sharp-duotone fa-solid fa-arrow-right"></i></label>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Share Your Setup Section -->
+<section class="share-setup">
+    <div class="setup-text">
+        <p>Share your setup with</p>
+        <h2>#FuniroFurniture</h2>
+    </div>
+    <div class="footer-banner">
+        <img src="assets/image/home/bf-footer-banner.png" alt="Footer banner">
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<div class="footer-divider"></div>
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Box 1: Logo & Address -->
+        <div class="footer-box logo-box">
+            <img class="footer-logo" src="assets/image/logo.png" alt="">
+            <p>400 University Drive Suite 200 <br>Coral Gables, FL 33134 USA</p>
+        </div>
+
+        <!-- Box 2: Links -->
+        <div class="footer-box links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/shop.html">Shop</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Box 3: Help -->
+        <div class="footer-box help">
+            <h3>Help</h3>
+            <ul>
+                <li><a href="#">Payment Options</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Privacy Policies</a></li>
+            </ul>
+        </div>
+
+        <!-- Box 4: Newsletter -->
+        <div class="footer-box newsletter-box">
+            <h3>Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Enter Your Email Address">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="footer-divider"></div>
+    <p class="footer-bottom">2023 Funiro. All rights reserved</p>
+</footer>
+
+
+</body>
+</html>

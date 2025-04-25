@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Backgrounds</title>
+    <style>
+        .multi-bg {
+            width: 500px;
+            height: 400px;
+            background-image: 
+                url('/bg1.jpg'), 
+                url('/bg2.jpg'), 
+                url('/bg3.png'), 
+                url('/bg4.jpg'), 
+                url('/bg5.avif');
+            background-size: 100px 100px, 150px 150px, 10px 10px, 250px 250px, cover;
+            background-position: top left, top right, center, bottom right, center;
+            background-repeat: no-repeat, no-repeat, repeat, no-repeat, no-repeat;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="multi-bg"></div>
+</body>
+</html>
