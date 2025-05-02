@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bootstrap Project Task Page 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-2">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="img/2/logo.png" alt="Logo" height="30">
+    </a>
+
+    <!-- Toggler button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links & Right-side Items -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <!-- Navigation Menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link text-dark" href="page4.html">Business</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="page4.html"">Health News</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="page4.html"">Mobile News</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="page4.html"">Sports</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="page4.html"">Culture</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="page4.html"">Subscribe</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="page4.html"">Cart</a></li>
+      </ul>
+
+      <!-- Right Section: Search and Icons -->
+      <form class="d-flex align-items-center gap-2 mt-3 mt-lg-0" role="search">
+        <input class="form-control form-control-sm" type="search" placeholder="Search here..." aria-label="Search">
+        <a href="#" class="text-dark"><i class="bi bi-person fs-5"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-cart fs-5"></i></a>
+      </form>
+
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="py-4 bg-light">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Left: Featured Post -->
+      <div class="col-lg-8">
+        <div class="card border-0">
+          <img src="img/2/1.png" class="card-img-top" alt="Featured News">
+          <div class="card-body px-0">
+            <h5 class="card-title fw-bold mt-3">
+              Revolutionizing manufacturing: Emerging trends shaping the industry
+            </h5>
+            <div class="text-muted small mt-2">
+              <span class="badge bg-primary text-white">World News</span>
+              <span class="ms-3">July 25, 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Sidebar Top Stories -->
+      <div class="col-lg-4">
+        <h6 class="fw-bold border-bottom pb-2 mb-3">Top Stories</h6>
+
+        <div class="border-bottom pb-2 mb-3">
+          <div class="text-muted d-block">
+            <span class="badge bg-primary text-white">Business</span>
+            <span class="ms-3">- July 25, 2025</span>
+          </div>
+          <a href="#" class="text-dark fw-semibold text-decoration-none">
+            Adapting business strategies to meet changing demands
+          </a>
+        </div>
+
+        <div class="border-bottom pb-2 mb-3">
+          <div class="text-muted d-block">
+            <span class="badge bg-danger text-white">Tech</span>
+            <span class="ms-3">- July 25, 2025</span>
+          </div>
+          <a href="#" class="text-dark fw-semibold text-decoration-none">
+            Smart homes revolution: how IoT is transforming living spaces
+          </a>
+        </div>
+
+        <div class="border-bottom pb-2 mb-3">
+          <div class="text-muted d-block">
+            <span class="badge bg-warning text-white">Culture</span>
+            <span class="ms-3">- July 25, 2025</span>
+          </div>
+          <a href="#" class="text-dark fw-semibold text-decoration-none">
+            The power of art: connecting and expressing cultural identity
+          </a>
+        </div>
+
+        <div class="border-bottom pb-2 mb-3">
+          <div class="text-muted d-block">
+            <span class="badge bg-black text-white">AI</span>
+            <span class="ms-3">- July 25, 2025</span>
+          </div>
+          <a href="#" class="text-dark fw-semibold text-decoration-none">
+            How artificial intelligence & machine learning are changing the field
+          </a>
+        </div>
+
+        <div class="border-bottom pb-2 mb-3">
+          <div class="text-muted d-block">
+            <span class="badge bg-info text-white">Sports</span>
+            <span class="ms-3">- July 25, 2025</span>
+          </div>
+          <a href="#" class="text-dark fw-semibold text-decoration-none">
+            The influence of youth sports programs on future champions
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Category Grid Section -->
+<section class="py-4">
+  <div class="container">
+    <div class="row g-3">
+
+      <!-- Category Card -->
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="position-relative overflow-hidden rounded">
+          <img src="img/2/cat-1.png" class="img-fluid w-100 rounded" alt="Business">
+          <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-2 py-1">
+            <a href="#" class="text-white text-decoration-none fw-semibold">Business</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat for other categories -->
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="position-relative overflow-hidden rounded">
+          <img src="img/2/cat-2.png" class="img-fluid w-100 rounded" alt="Health">
+          <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-2 py-1">
+            <a href="#" class="text-white text-decoration-none fw-semibold">Health</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="position-relative overflow-hidden rounded">
+          <img src="img/2/cat-tech.png" class="img-fluid w-100 rounded" alt="Technology">
+          <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-2 py-1">
+            <a href="#" class="text-white text-decoration-none fw-semibold">Technology</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="position-relative overflow-hidden rounded">
+          <img src="img/2/cat-3.png" class="img-fluid w-100 rounded" alt="World News">
+          <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-2 py-1">
+            <a href="#" class="text-white text-decoration-none fw-semibold">World News"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="position-relative overflow-hidden rounded">
+          <img src="img/2/cat-4.png" class="img-fluid w-100 rounded" alt="Sports">
+          <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-2 py-1">
+            <a href="#" class="text-white text-decoration-none fw-semibold">Sports</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="position-relative overflow-hidden rounded">
+          <img src="img/2/cat-5.png" class="img-fluid w-100 rounded" alt="Culture">
+          <div class="position-absolute bottom-0 start-0 bg-dark bg-opacity-50 text-white px-2 py-1">
+            <a href="#" class="text-white text-decoration-none fw-semibold">Culture</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Editor's Pick Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <!-- Left: Stories List -->
+      <div class="col-lg-4">
+        <h6 class="text-primary fw-bold mb-1">Stories That Matter</h6>
+        <h2 class="fw-bold mb-4">EDITOR'S PICK</h2>
+
+        <!-- Story 1 -->
+        <div class="mb-4">
+          <span class="text-muted small d-block">CULTURE</span>
+          <h6 class="fw-semibold mb-0">
+            <a href="#" class="text-dark text-decoration-none">
+              The power of art in connecting and expressing cultural identity
+            </a>
+          </h6>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="mb-4">
+          <span class="text-muted small d-block">HEALTH NEWS</span>
+          <h6 class="fw-semibold mb-0">
+            <a href="#" class="text-dark text-decoration-none">
+              How artificial intelligence & machine learning are changing the field
+            </a>
+          </h6>
+        </div>
+
+        <!-- Story 3 -->
+        <div>
+          <span class="text-muted small d-block">SPORTS</span>
+          <h6 class="fw-semibold mb-0">
+            <a href="#" class="text-dark text-decoration-none">
+              The influence of youth sports programs on developing future champions
+            </a>
+          </h6>
+        </div>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="col-lg-8">
+        <img src="img/2/editor-pick.jpg" alt="Editor's Pick" class="img-fluid rounded w-100 shadow">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Latest News Section -->
+<section class="py-5" style="background-color: #eca870; color: #fff;">
+  <div class="container ">
+    <div class="row g-4 align-items-start">
+
+      <!-- Column 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <img src="img/2/latest-news-1.avif" class="card-img-top" alt="Technology">
+          <div class="card-body">
+            <h6 class="text-primary text-uppercase small mb-1">LATEST NEWS</h6>
+            <p class="text-muted small mb-1">TECHNOLOGY &nbsp;|&nbsp; JAN 25, 2025</p>
+            <h5 class="fw-semibold mb-0">
+              <a href="#" class="text-dark text-decoration-none">
+                Future-focused: an in-depth look at cutting-edge tech trends
+              </a>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm">
+          <img src="img/2/latest-news-2.jpg" class="card-img-top" alt="Business">
+          <div class="card-body">
+            <h6 class="text-primary text-uppercase small mb-1">LATEST NEWS</h6>
+            <p class="text-muted small mb-1">BUSINESS &nbsp;|&nbsp; JAN 25, 2025</p>
+            <h5 class="fw-semibold mb-0">
+              <a href="#" class="text-dark text-decoration-none">
+                Understanding the interconnectedness of events shaping our world today
+              </a>
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h6 class="fw-bold mb-0">More Stories</h6>
+          <a href="#" class="text-primary small text-decoration-none">VIEW ALL</a>
+        </div>
+
+        <!-- Small Story 1 -->
+        <div class="d-flex mb-3">
+          <img src="img/2/latest-news-3.jpg" class="rounded me-3" alt="Story" width="120" height="100">
+          <div>
+            <span class="text-muted small d-block">BUSINESS | JAN 30, 2025</span>
+            <a href="#" class="text-dark fw-semibold text-decoration-none">
+              Adapting business strategies to meet changing demands
+            </a>
+          </div>
+        </div>
+
+        <!-- Small Story 2 -->
+        <div class="d-flex mb-3">
+          <img src="img/2/latest-news-4.webp" class="rounded me-3" alt="Story" width="120" height="100">
+          <div>
+            <span class="text-muted small d-block">TECHNOLOGY | FEB 10, 2025</span>
+            <a href="#" class="text-dark fw-semibold text-decoration-none">
+              Smart homes revolution: how IoT is transforming living spaces
+            </a>
+          </div>
+        </div>
+
+        <!-- Small Story 3 -->
+        <div class="d-flex">
+          <img src="img/2/latest-news-5.jfif" class="rounded me-3" alt="Story" width="120" height="100">
+          <div>
+            <span class="text-muted small d-block">CULTURE | JAN 27, 2025</span>
+            <a href="#" class="text-dark fw-semibold text-decoration-none">
+              The power of art in connecting and expressing cultural identity
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Technology Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <!-- Section Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h4 class="fw-bold mb-0">TECHNOLOGY</h4>
+      <a href="#" class="text-primary text-decoration-none">VIEW ALL</a>
+    </div>
+
+    <!-- News Grid in 3 Columns -->
+    <div class="row g-4">
+      <!-- Column 1 -->
+      <div class="col-md-6 col-lg-3 d-flex flex-column gap-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="img/2/tec1.png" class="card-img-top" alt="Smart Homes">
+          <div class="card-body">
+            <small class="text-muted">FEB 10, 2025</small>
+            <h6 class="fw-semibold mt-1">
+              Smart homes revolution: how IoT is transforming living spaces
+            </h6>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm h-100">
+          <img src="img/2/tec-2.png" class="card-img-top" alt="5G Future">
+          <div class="card-body">
+            <small class="text-muted">TECHNOLOGY | JAN 25, 2025</small>
+            <h6 class="fw-semibold mt-1">
+              The future of 5G: connecting a world at lightning speed
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-6 col-lg-3 d-flex flex-column gap-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="img/2/tec-3.png" class="card-img-top" alt="Cybersecurity">
+          <div class="card-body">
+            <small class="text-muted">TECHNOLOGY | JAN 25, 2025</small>
+            <h6 class="fw-semibold mt-1">
+              Cybersecurity at risk: the growing threat of digital breaches
+            </h6>
+          </div>
+        </div>
+        <div class="card border-0 shadow-sm h-100">
+          <img src="img/2/tec-4.png" class="card-img-top" alt="Tech in Edutainment">
+          <div class="card-body">
+            <small class="text-muted">TECHNOLOGY | JAN 25, 2025</small>
+            <h6 class="fw-semibold mt-1">
+              Transforming entertainment, education & beyond
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3 with Text Over Image -->
+<div class="col-12 col-lg-6">
+  <div class="card border-0 shadow-sm h-100 position-relative text-white">
+    <div class="position-relative h-100">
+      <img src="img/2/tec-5.jpg" class="w-100" alt="Future Focused" style="object-fit: cover; height: auto;">
+
+      <!-- Text Overlay -->
+      <div class="position-absolute bottom-0 w-100 p-3" style="background: rgba(0, 0, 0, 0.6);">
+        <small class="text-light">JAN 25, 2025</small>
+        <h6 class="fw-semibold text-white mb-1">
+          Future-focused: an in-depth look at cutting-edge tech trends
+        </h6>
+        <p class="mb-0 small text-light">JACK</p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="container py-5" style="background-image: url('img/2/bg-1.jpeg'); background-size: cover; background-position: center;">
+  <div class="text-white position-relative" style="min-height: 400px;">
+    <div class="position-absolute bottom-0 start-0 end-0 pb-4 px-3 px-md-5 d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center" style="background: rgba(0, 0, 0, 0.6);">
+      <div class="mb-3 mb-md-0">
+        <h3 class="fw-bold">Turning ideas into impactful Ad campaigns</h3>
+        <p class="mb-0">Partner with us to take your brand to the next level. 
+          Our platform offers prime  advertising <br> opportunities designed to connect your business with a diverse & engaged audience.</p>
+      </div>
+      <a href="#" class="btn btn-warning text-dark fw-semibold">ADVERTISE WITH US</a>
+    </div>
+  </div>
+</section>
+
+<!-- Editorial -->
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="fw-bold mb-0">OUR EDITORIAL TEAM</h3>
+      <a href="#" class="btn btn-outline-dark btn-sm">VIEW ALL</a>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="row g-4">
+      <!-- Team Member 1 -->
+      <div class="col-12 col-md-4">
+        <div class="position-relative">
+          <img src="img/2/team-1.png" class="img-fluid h-100 w-100" alt="Marvin McKinney" style="height: 350px; object-fit: cover;">
+          <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white" style="background: rgba(0, 0, 0, 0.5);">
+            <h6 class="mb-0 fw-semibold">Marvin McKinney</h6>
+            <small>Senior Reporter</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="col-12 col-md-4">
+        <div class="position-relative">
+          <img src="img/2/team-2.png" class="img-fluid h-100 w-100" alt="Theresa Webb" style="height: 350px; object-fit: cover;">
+          <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white" style="background: rgba(0, 0, 0, 0.5);">
+            <h6 class="mb-0 fw-semibold">Theresa Webb</h6>
+            <small>Publisher</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="col-12 col-md-4">
+        <div class="position-relative">
+          <img src="img/2/team-3.png" class="img-fluid h-100 w-100" alt="Esther Howards" style="height: 350px; object-fit: cover;">
+          <div class="position-absolute bottom-0 start-0 w-100 p-3 text-white" style="background: rgba(0, 0, 0, 0.5);">
+            <h6 class="mb-0 fw-semibold">Esther Howards</h6>
+            <small>Content Writer</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Podcast section -->
+<section class="py-5">
+  <div class="container">
+    <!-- Section Heading -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h3 class="fw-bold mb-0">PODCAST</h3>
+      <a href="#" class="btn btn-outline-dark btn-sm">VIEW ALL</a>
+    </div>
+
+    <!-- Podcast Grid -->
+    <div class="row g-4">
+      <!-- Left Column (Big Podcast Feature) -->
+      <div class="col-lg-7">
+        <div class="position-relative rounded overflow-hidden" style="height: 700px;">
+          <img src="img/2/podcast-1.webp" class="w-100 h-100 object-fit-cover" alt="Guy Hawons">
+          
+          <!-- Top-left Badge -->
+          <div class="position-absolute top-0 start-0 m-3 px-3 py-1 bg-warning text-dark fw-semibold rounded-pill small">
+            10 MINUTE
+          </div>
+          
+          <!-- Bottom Text -->
+          <div class="position-absolute bottom-0 w-100 p-3 text-white" style="background: rgba(0, 0, 0, 0.6);">
+          
+            <h6 class="mb-1 fw-semibold">MARVIN MCKINNEY</h6>
+            <p class="mb-0 small">Conversations beyond borders insights, ideas and inspiring journeys</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (2 Stacked Podcasts) -->
+      <div class="col-lg-5 d-flex flex-column gap-4">
+
+        <!-- Podcast 1 -->
+        <div class="position-relative rounded overflow-hidden" style="height: 337px;">
+          <img src="img/2/podcast-2.jpeg" class="w-100 h-100 object-fit-cover" alt="Guy Hawons">
+          
+  
+          
+          <!-- Bottom Text -->
+          <div class="position-absolute bottom-0 w-100 p-3 text-white" style="background: rgba(0, 0, 0, 0.6);">
+            <h6 class="mb-1 fw-semibold">GUY HAWONS</h6>
+            <p class="mb-0 small">Beyond the mic: transformative ideas, powerful voices, endless inspiration</p>
+          </div>
+        </div>
+
+        <!-- Podcast 2 -->
+        <div class="position-relative rounded overflow-hidden" style="height: 337px;">
+          <img src="img/2/podcast-1.webp" class="w-100 h-100 object-fit-cover" alt="Guy Hawons">
+          
+          
+          
+          <!-- Bottom Text -->
+          <div class="position-absolute bottom-0 w-100 p-3 text-white" style="background: rgba(0, 0, 0, 0.6);">
+            <h6 class="mb-1 fw-semibold">KRISTIN WAT SON</h6>
+            <p class="mb-0 small">The change makers inspiring stories of transformation and resilience</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Left Column: Newsletter + Links -->
+      <div class="col-lg-9">
+        <!-- Newsletter -->
+        <p class="mb-3 fs-5">Stay updated with the latest news, stories, and insights <br>from around the globe.</p>
+        <form class="d-flex mb-5 gap-3" role="search">
+          <input type="email" class="form-control w-50" placeholder="Enter your e-mail...">
+          <button class="btn btn-warning" type="submit">SUBSCRIBE NOW</button>
+        </form>
+
+        <!-- Footer Link Sections -->
+        <div class="row">
+          <!-- PAGES -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase">Pages</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">About us</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Categories</a></li>
+              <li><a href="#" class="text-light text-decoration-none">News</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Authors</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Podcast</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Newsletter Plans</a></li>
+            </ul>
+          </div>
+
+          <!-- CATEGORIES -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase">Categories</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Business</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Health News</a></li>
+              <li><a href="#" class="text-light text-decoration-none">World News</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Sports</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Culture</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Technology</a></li>
+            </ul>
+          </div>
+
+          <!-- RESOURCES -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase">Resources</h6>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Contact us</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Advertise</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Social Media Icons -->
+      <div class="col-lg-3 text-start text-lg-start mt-4 mt-lg-0">
+        <div class="d-flex flex-column justify-content-center align-items-start gap-4">
+          <a href="#" class="text-light fs-6 text-decoration-none d-flex align-items-center gap-2">
+            <i class="bi bi-facebook"></i> Facebook
+          </a>
+          <a href="#" class="text-light fs-6 text-decoration-none d-flex align-items-center gap-2">
+            <i class="bi bi-youtube"></i> YouTube
+          </a>
+          <a href="#" class="text-light fs-6 text-decoration-none d-flex align-items-center gap-2">
+            <i class="bi bi-instagram"></i> Instagram
+          </a>
+          <a href="#" class="text-light fs-6 text-decoration-none d-flex align-items-center gap-2">
+            <i class="bi bi-twitter"></i> Twitter
+          </a>
+          <a href="#" class="text-light fs-6 text-decoration-none d-flex align-items-center gap-2">
+            <i class="bi bi-reddit"></i> Reddit
+          </a>
+          <a href="#" class="text-light fs-6 text-decoration-none d-flex align-items-center gap-2">
+            <i class="bi bi-rss"></i> RSS.com
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="row mt-4 pt-4 border-top border-secondary">
+      <div class="col-md-6 d-flex align-items-center gap-3">
+        <img src="img/2/footer-logo.png" alt="Logo" height="50">
+        <a href="#" class="text-light text-decoration-none small">Privacy Policy</a>
+        <a href="#" class="text-light text-decoration-none small">Terms & Conditions</a>
+        <a href="#" class="text-light text-decoration-none small">License</a>
+      </div>
+      <div class="col-md-6 text-md-end text-center small text-light mt-3 mt-md-0">
+        &copy; 2025 Thewebpal. Designed by Masum.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
